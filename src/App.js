@@ -12,19 +12,22 @@ import UploadShuttle from "./Admin/adminPages/UploadShuttle";
 import UploadRacquets from "./Admin/adminPages/UploadRacquets";
 import UploadAcc from "./Admin/adminPages/UploadAcc";
 import UploadStrings from "./Admin/adminPages/UploadStrings";
+import UserLayout from "./User/Userlayout";
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route element={<UserLayout />}>
+         <Route path="/" element={<Home/>} />
         <Route path="/Racquet" element={<Racquet />} />
         <Route path="/Shuttle" element={<Shuttle />} />
         <Route path="/Strings" element={<Strings />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Acc" element={<Acc />} />
         <Route path="/Cart" element={<Cart />} />
+        </Route>
 
         <Route path="/admin/Shuttle" element={<UploadShuttle />} />
         <Route path="/admin/Racquet" element={<UploadRacquets />} />

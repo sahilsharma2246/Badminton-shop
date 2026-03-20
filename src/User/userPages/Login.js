@@ -18,6 +18,9 @@ function Login() {
       if (data[key].email === email && data[key].password === password) {
         
         firedb.child("Owner").child(key).update({ status: 1 });
+
+         localStorage.setItem("userKey", key);
+
         navigate('/admin/shuttle');
         return;
       }
@@ -55,7 +58,7 @@ function Login() {
         onChange={set2}
       />
 
-      <button id="b1" onClick={login}>Login</button>
+      <button id='b1'  onClick={login}>Login</button>
     </div>
   </div>
   )

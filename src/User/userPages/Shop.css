@@ -1,0 +1,156 @@
+/* ===== PAGE WRAPPER ===== */
+.shop-container {
+  padding: 30px;
+  background: #020617;
+  min-height: 100vh;
+  color: #e5e5e5;
+}
+
+/* ===== TITLE ===== */
+.shop-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #facc15;
+  letter-spacing: 1px;
+}
+
+/* ===== PRODUCT GRID ===== */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.shop-card {
+  background: #0a0a0a;
+  border: 1px solid rgba(234, 179, 8, 0.2);
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.shop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(234, 179, 8, 0.25);
+}
+
+/* IMAGE */
+.shop-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* TEXT */
+.shop-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.shop-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* BUTTON */
+.shop-btn {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #eab308, #facc15);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.shop-btn:hover {
+  transform: scale(1.05);
+  color: #000;
+}
+
+/* ===== CART TABLE ===== */
+.cart-table {
+  margin-top: 40px;
+  overflow-x: auto;
+}
+
+.cart-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #0a0a0a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cart-table th {
+  background: #020617;
+  color: #facc15;
+  padding: 14px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.cart-table td {
+  padding: 12px;
+  border-bottom: 1px solid #222;
+  vertical-align: middle;
+}
+
+/* IMAGE IN TABLE */
+.cart-table img {
+  border-radius: 6px;
+}
+
+/* ROW HOVER */
+.cart-table tr:hover {
+  background: rgba(234, 179, 8, 0.05);
+}
+
+/* ===== TOTAL SECTION ===== */
+.cart-total {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* REMOVE BUTTON */
+.remove-btn {
+  background: #dc2626;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.remove-btn:hover {
+  opacity: 0.8;
+}
+
+/* ORDER BUTTON */
+.place-order-btn {
+  margin-top: 12px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #198754;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.place-order-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}

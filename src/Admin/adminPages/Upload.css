@@ -1,8 +1,9 @@
 /* ===== CONTAINER ===== */
 .upload-container {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;   /* ✅ stack vertically */
+  justify-content: flex-start; /* align from top */
   align-items: center;
   background: #020617;
   padding: 20px;
@@ -19,6 +20,8 @@
 
   border: 1px solid rgba(234, 179, 8, 0.2);
   box-shadow: 0 0 20px rgba(234, 179, 8, 0.1);
+
+  margin-bottom: 30px; /* ✅ space between form and table */
 }
 
 /* ===== TITLE ===== */
@@ -74,6 +77,86 @@
 .upload-box button:hover {
   box-shadow: 0 0 12px rgba(234, 179, 8, 0.6);
   color: white;
+}
+
+/* ===== TABLE CONTAINER ===== */
+.table-container {
+  width: 100%;
+  max-width: 1000px;
+  background: #0a0a0a;
+  padding: 20px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(234, 179, 8, 0.2);
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.1);
+}
+
+/* TABLE TITLE */
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #eab308, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TABLE */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e5e5e5;
+}
+
+/* HEADER */
+.table-container th {
+  background: #020617;
+  color: #facc15;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+/* ROWS */
+.table-container td {
+  padding: 10px;
+  border-bottom: 1px solid #222;
+}
+
+/* ROW HOVER */
+.table-container tr:hover {
+  background: rgba(234, 179, 8, 0.05);
+}
+
+/* IMAGE */
+.table-container img {
+  border-radius: 6px;
+}
+
+/* BUTTONS */
+.table-container button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
+.table-container button:first-child {
+  background: rgb(25, 135, 84);
+  color: #fff;
+}
+
+/* DELETE BUTTON */
+.table-container button:last-child {
+  background: red;
+  color: #fff;
+}
+
+/* BUTTON HOVER */
+.table-container button:hover {
+  opacity: 0.8;
 }
 
 /* ===== MOBILE ===== */

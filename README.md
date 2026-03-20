@@ -1,36 +1,29 @@
-🏸 Badminton Shop Website
+# 🏸 Badminton Shop Website
 
 A modern Badminton E-commerce Website built using React + Firebase, featuring an Admin Panel to manage products and a User Interface to explore items like racquets, shuttles, strings, and accessories.
 
-🚀 Features
-👤 User Side
+# 🚀 Features
 
-🏸 Browse Racquets, Shuttles, Strings, Accessories
 
-🔍 Explore product details
+# 👤 User Side
 
-🛒 Add to Cart (optional if added)
+•🏸 Browse Racquets, Shuttles, Strings, Accessories
+•🔍 Explore product details
+•🛒 Cart system (optional)
+•📱 Fully responsive design
+•🎨 Premium Gold + Dark theme
 
-📱 Fully Responsive UI
+# 🔐 Admin Panel
 
-🎨 Premium Gold + Dark Theme
+•🔑 Secure Login (Firebase)
+•➕ Add products (Racquet, Shuttle, Strings, Accessories)
+•📦 Data stored in Firebase Realtime Database
+•🎯 Simple and clean UI
 
-🔐 Admin Panel
+# 🛠️ Tech Stack
 
-🔑 Secure Login (Firebase-based)
+•⚛️ React.js
+•🔥 Firebase Realtime Database
+•🎨 CSS (Custom Gold Theme)
+•🌐 React Router
 
-➕ Add Products (Racquet, Shuttle, Strings, Accessories)
-
-📦 Data stored in Firebase Realtime Database
-
-🎯 Simple and clean dashboard UI
-
-🛠️ Tech Stack
-
-⚛️ React.js
-
-🔥 Firebase Realtime Database
-
-🎨 CSS (Custom Gold Theme)
-
-🌐 React Router

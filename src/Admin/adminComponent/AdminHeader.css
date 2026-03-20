@@ -1,98 +1,70 @@
-/* ===== GLOBAL RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ===== HEADER ===== */
-.header {
+/* ===== ADMIN HEADER ===== */
+.admin-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 15px 40px;
 
   background: rgba(10, 10, 10, 0.9);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(234, 179, 8, 0.3);
 
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  color: white;
+  padding: 15px 30px;
 }
 
-/* ===== LOGO ===== */
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-
+/* ===== TITLE ===== */
+.admin-header h2 {
   background: linear-gradient(90deg, #eab308, #facc15);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  cursor: pointer;
 }
 
-/* ===== NAV WRAPPER FIX ===== */
-nav {
-  width: auto;
-}
-
-/* ===== NAV LINKS ===== */
-.nav-links {
-  list-style: none;
+/* ===== NAV ===== */
+.admin-header nav {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 
 /* ===== LINKS ===== */
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links li a {
-  text-decoration: none;
+.admin-header a {
   color: #d4d4d4;
-  font-size: 15px;
+  text-decoration: none;
   transition: 0.3s;
   position: relative;
 }
 
 /* underline */
-.nav-links li a::after {
+.admin-header a::after {
   content: "";
   position: absolute;
   width: 0%;
   height: 2px;
   background: linear-gradient(90deg, #eab308, #facc15);
   left: 0;
-  bottom: -5px;
+  bottom: -4px;
   transition: 0.3s;
 }
 
-.nav-links li a:hover::after {
+.admin-header a:hover::after {
   width: 100%;
 }
 
-.nav-links li a:hover {
+.admin-header a:hover {
   color: #eab308;
 }
 
-/* ===== BUTTON ===== */
-.login-btn {
+/* ===== LOGOUT BUTTON ===== */
+.logout-btn {
   background: linear-gradient(135deg, #eab308, #facc15);
+  padding: 6px 12px;
+  border-radius: 6px;
   color: #000 !important;
-  padding: 7px 16px;
-  border-radius: 8px;
   font-weight: 500;
   transition: 0.3s;
 }
 
-.login-btn:hover {
-  box-shadow: 0 0 14px rgba(234, 179, 8, 0.6);
+.logout-btn:hover {
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.6);
   color: white !important;
 }
 
@@ -100,48 +72,39 @@ nav {
 
 /* Tablet */
 @media (max-width: 992px) {
-  .header {
+  .admin-header {
     padding: 15px 20px;
   }
 
-  .nav-links {
-    gap: 20px;
+  .admin-header nav {
+    gap: 15px;
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .header {
+  .admin-header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  nav {
-    width: 100%; 
-  }
-
-  .logo {
+  .admin-header h2 {
     margin-bottom: 10px;
   }
 
-  .nav-links {
-    display: flex;
-    
+  .admin-header nav {
+
     width: 100%;
     gap: 10px;
   }
 
-  .nav-links li {
-    width: 100%;
-  }
-
-  .nav-links li a {
+  .admin-header a {
     display: block;
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
   }
 
-  .login-btn {
+  .logout-btn {
     display: inline-block;
     margin-top: 10px;
   }
@@ -149,15 +112,15 @@ nav {
 
 /* Small Mobile */
 @media (max-width: 480px) {
-  .header {
+  .admin-header {
     padding: 12px 15px;
   }
 
-  .logo {
-    font-size: 20px;
+  .admin-header h2 {
+    font-size: 18px;
   }
 
-  .nav-links li a {
+  .admin-header a {
     font-size: 14px;
   }
 }

@@ -1,21 +1,37 @@
+/* ===== FOOTER ===== */
 .footer {
-  background: #0b1c2c;
-  color: white;
+  background: #0a0a0a;
+  color: #d4d4d4;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   margin-top: 50px;
+
+  /* subtle gold border */
+  border-top: 1px solid rgba(234, 179, 8, 0.2);
 }
 
+/* ===== FOOTER LINKS ===== */
 .footer-links {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .footer-links a {
-  margin: 0 10px;
-  color: #00c2ff;
+  margin: 0 12px;
+
+  /* 🔥 GOLD TEXT */
+  color: #eab308;
   text-decoration: none;
+  transition: 0.3s;
 }
 
+/* 🔥 HOVER EFFECT */
 .footer-links a:hover {
-  text-decoration: underline;
+  color: #facc15;
+  text-shadow: 0 0 8px rgba(234, 179, 8, 0.6);
+}
+
+/* OPTIONAL SMALL TEXT */
+.footer p {
+  color: #a3a3a3;
+  font-size: 14px;
 }

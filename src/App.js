@@ -13,6 +13,7 @@ import UploadRacquets from "./Admin/adminPages/UploadRacquets";
 import UploadAcc from "./Admin/adminPages/UploadAcc";
 import UploadStrings from "./Admin/adminPages/UploadStrings";
 import UserLayout from "./User/Userlayout";
+import Adminlayout from "./Admin/Adminlayout";
 
 
 function App() {
@@ -29,14 +30,14 @@ function App() {
         <Route path="/Cart" element={<Cart />} />
         </Route>
 
-        <Route path="/admin/Shuttle" element={<UploadShuttle />} />
-        <Route path="/admin/Racquet" element={<UploadRacquets />} />
-        <Route path="/admin/Acc" element={<UploadAcc />} />
-        <Route path="/admin/Strings" element={<UploadStrings />} />
-        <Route path="/admin/Orders" element={<Orders />} />
-        <Route path="/logout" element={<Logout />} />
-
-       
+       <Route path="/admin" element={<Adminlayout />}>
+          <Route path="shuttle" element={<UploadShuttle />} />
+          <Route path="racquet" element={<UploadRacquets />} />
+          <Route path="Acc" element={<UploadAcc />} />
+          <Route path="strings" element={<UploadStrings />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="logout" element={<Logout />} />  
+        </Route>
 
       </Routes>
     </BrowserRouter>

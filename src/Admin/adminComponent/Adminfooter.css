@@ -1,0 +1,34 @@
+/* ===== ADMIN FOOTER ===== */
+.admin-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+
+  background: #0a0a0a;
+  color: #d4d4d4;
+
+  border-top: 1px solid rgba(234, 179, 8, 0.2);
+}
+
+/* ===== TEXT ===== */
+.admin-footer p {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+/* optional glow on hover */
+.admin-footer p:hover {
+  color: #eab308;
+  transition: 0.3s;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .admin-footer {
+    padding: 15px;
+  }
+
+  .admin-footer p {
+    font-size: 13px;
+  }
+}

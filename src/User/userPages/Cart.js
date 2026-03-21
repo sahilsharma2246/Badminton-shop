@@ -5,6 +5,14 @@ import "./Shop.css";
 function Cart() {
   const [cart, setCart] = useState([]);
 
+  // 👇 New states
+  const [showForm, setShowForm] = useState(false);
+  const [user, setUser] = useState({
+    name: "",
+    phone: "",
+    address: ""
+  });
+
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCart(storedCart);
@@ -20,13 +28,20 @@ function Cart() {
     return sum + Number(item.price || 0);
   }, 0);
 
-  const placeOrder = () => {
-    if (cart.length === 0) {
-      alert("Cart is empty");
+  // 👇 Handle input
+  const handleChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  // 👇 Final Order Submit
+  const submitOrder = () => {
+    if (!user.name || !user.phone || !user.address) {
+      alert("Please fill all details");
       return;
     }
 
     const order = {
+      customer: user,
       items: cart,
       total: totalPrice,
       date: new Date().toISOString()
@@ -38,6 +53,8 @@ function Cart() {
 
     setCart([]);
     localStorage.removeItem("cart");
+    setShowForm(false);
+    setUser({ name: "", phone: "", address: "" });
   };
 
   return (
@@ -86,10 +103,45 @@ function Cart() {
           <div className="cart-total">
             <h3>Total: ₹{totalPrice}</h3>
 
-            <button className="place-order-btn" onClick={placeOrder}>
+            <button
+              className="place-order-btn"
+              onClick={() => setShowForm(true)}
+            >
               Place Order
             </button>
           </div>
+
+          {/* 👇 ORDER FORM */}
+          {showForm && (
+            <div className="order-form">
+              <h3>Enter Details</h3>
+
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={user.name}
+                onChange={handleChange}
+              />
+
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number"
+                value={user.phone}
+                onChange={handleChange}
+              />
+
+              <textarea
+                name="address"
+                placeholder="Address"
+                value={user.address}
+                onChange={handleChange}
+              ></textarea>
+
+              <button onClick={submitOrder}>Confirm Order</button>
+            </div>
+          )}
         </>
       )}
     </div>

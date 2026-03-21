@@ -54,7 +54,7 @@ function UploadStrings() {
     });
   }, []);
 
-  // ✅ Upload / Update
+ 
   const upload = () => {
     if (!data.name || !data.price) {
       alert("Fill required fields");

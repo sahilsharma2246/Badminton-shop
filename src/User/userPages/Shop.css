@@ -154,3 +154,87 @@
   opacity: 0.9;
   transform: scale(1.03);
 }
+/* ===== SEARCH BAR ===== */
+.search-bar {
+  display: block;
+  margin: 0 auto 25px;
+  padding: 12px 15px;
+  width: 100%;
+  max-width: 400px;
+
+  background: #0a0a0a;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  border-radius: 10px;
+
+  color: #e5e5e5;
+  font-size: 15px;
+
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* placeholder */
+.search-bar::placeholder {
+  color: #888;
+}
+
+/* focus effect */
+.search-bar:focus {
+  border-color: #facc15;
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.4);
+}
+
+/* hover */
+.search-bar:hover {
+  border-color: rgba(234, 179, 8, 0.6);
+}
+
+/* ===== ORDER FORM ===== */
+.order-form {
+  margin-top: 20px;
+  background: #0a0a0a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(234, 179, 8, 0.2);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-form h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #facc15;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #020617;
+  color: #fff;
+  outline: none;
+}
+
+.order-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.order-form button {
+  width: 100%;
+  padding: 10px;
+  background: #198754;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  opacity: 0.9;
+}

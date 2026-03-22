@@ -2,24 +2,26 @@
 .admin-footer {
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
 
-  background: #0a0a0a;
-  color: #d4d4d4;
+  margin: 20px 15px;
+  border-radius: 12px;
 
-  border-top: 1px solid rgba(234, 179, 8, 0.2);
+  background: #ffffff;
+  color: #555;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 /* ===== TEXT ===== */
 .admin-footer p {
   font-size: 14px;
-  color: #a3a3a3;
+  color: #777;
+  transition: 0.3s;
 }
 
-/* optional glow on hover */
+/* hover effect */
 .admin-footer p:hover {
-  color: #eab308;
-  transition: 0.3s;
+  color: #ff7a3d;
 }
 
 /* ===== RESPONSIVE ===== */

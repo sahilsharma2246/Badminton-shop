@@ -49,7 +49,7 @@ function Racquet() {
           <div className="shop-card" key={item.id}>
             <h3>{item.name}</h3>
             <img src={item.img} alt="" />
-            <p>₹{item.price}</p>
+            <h4>₹{item.price}</h4>
 
             <button className="shop-btn" onClick={() => addToCart(item)}>
               Add to Cart

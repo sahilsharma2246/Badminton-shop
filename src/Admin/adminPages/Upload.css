@@ -2,34 +2,30 @@
 .upload-container {
   min-height: 70vh;
   display: flex;
-  flex-direction: column;   /* ✅ stack vertically */
-  justify-content: flex-start; /* align from top */
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  background: #020617;
+  background: #f8f5f2;
   padding: 20px;
 }
 
 /* ===== BOX ===== */
 .upload-box {
-  background: #0a0a0a;
+  background: #ffffff;
   padding: 40px;
   border-radius: 12px;
   width: 100%;
   max-width: 400px;
   text-align: center;
 
-  border: 1px solid rgba(234, 179, 8, 0.2);
-  box-shadow: 0 0 20px rgba(234, 179, 8, 0.1);
-
-  margin-bottom: 30px; /* ✅ space between form and table */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
 }
 
 /* ===== TITLE ===== */
 .upload-box h2 {
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #eab308, #facc15);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff7a3d;
 }
 
 /* ===== INPUTS ===== */
@@ -40,20 +36,20 @@
   margin: 10px 0;
 
   border-radius: 6px;
-  border: 1px solid #333;
-  background: #020617;
-  color: #e5e5e5;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+
   outline: none;
+  transition: 0.3s;
 }
 
-/* focus */
 .upload-box input:focus,
 .upload-box textarea:focus {
-  border: 1px solid #eab308;
-  box-shadow: 0 0 8px rgba(234, 179, 8, 0.5);
+  border-color: #ff7a3d;
+  box-shadow: 0 0 6px rgba(255, 122, 61, 0.3);
 }
 
-/* textarea */
 .upload-box textarea {
   height: 80px;
   resize: none;
@@ -66,69 +62,71 @@
   margin-top: 15px;
 
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
 
-  background: linear-gradient(135deg, #eab308, #facc15);
-  color: #000;
-  font-weight: bold;
+  background: #ff7a3d;
+  color: #fff;
+  font-weight: 600;
+
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .upload-box button:hover {
-  box-shadow: 0 0 12px rgba(234, 179, 8, 0.6);
-  color: white;
+  background: #ff5c1a;
+  box-shadow: 0 5px 15px rgba(255, 122, 61, 0.4);
 }
 
 /* ===== TABLE CONTAINER ===== */
 .table-container {
   width: 100%;
-  max-width: 1000px;
-  background: #0a0a0a;
+  max-width: 1100px;
+  background: #ffffff;
   padding: 20px;
   border-radius: 12px;
 
-  border: 1px solid rgba(234, 179, 8, 0.2);
-  box-shadow: 0 0 20px rgba(234, 179, 8, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+  overflow-x: auto;
 }
 
 /* TABLE TITLE */
 .table-container h2 {
   text-align: center;
   margin-bottom: 15px;
-  background: linear-gradient(90deg, #eab308, #facc15);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff7a3d;
 }
 
 /* TABLE */
 .table-container table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
-  color: #e5e5e5;
+  color: #333;
 }
 
 /* HEADER */
 .table-container th {
-  background: #020617;
-  color: #facc15;
+  background: #fff5ef;
+  color: #ff7a3d;
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #333;
 }
 
 /* ROWS */
 .table-container td {
   padding: 10px;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #eee;
 }
 
 /* ROW HOVER */
 .table-container tr:hover {
-  background: rgba(234, 179, 8, 0.05);
+  background: #fff5ef;
 }
 
 /* IMAGE */
 .table-container img {
+  width: 70px;
   border-radius: 6px;
 }
 
@@ -137,31 +135,45 @@
   padding: 5px 10px;
   margin-right: 5px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 12px;
 }
 
-
+/* EDIT BUTTON */
 .table-container button:first-child {
-  background: rgb(25, 135, 84);
+  background: #198754;
   color: #fff;
 }
 
 /* DELETE BUTTON */
 .table-container button:last-child {
-  background: red;
+  background: #dc2626;
   color: #fff;
 }
 
-/* BUTTON HOVER */
 .table-container button:hover {
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 480px) {
+/* ===== TABLET ===== */
+@media (max-width: 768px) {
   .upload-box {
     padding: 25px;
+  }
+
+  .table-container th,
+  .table-container td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .table-container img {
+    width: 50px;
+  }
+
+  .table-container button {
+    padding: 4px 6px;
+    font-size: 10px;
   }
 }

@@ -1,9 +1,9 @@
 /* ===== PAGE WRAPPER ===== */
 .shop-container {
   padding: 30px;
-  background: #020617;
+  background: #f8f5f2;
   min-height: 100vh;
-  color: #e5e5e5;
+  color: #333;
 }
 
 /* ===== TITLE ===== */
@@ -12,8 +12,7 @@
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: bold;
-  color: #facc15;
-  letter-spacing: 1px;
+  color: #ff7a3d;
 }
 
 /* ===== PRODUCT GRID ===== */
@@ -25,18 +24,16 @@
 
 /* ===== PRODUCT CARD ===== */
 .shop-card {
-  background: #0a0a0a;
-  border: 1px solid rgba(234, 179, 8, 0.2);
+  background: #ffffff;
   border-radius: 14px;
   padding: 18px;
   text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .shop-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(234, 179, 8, 0.25);
 }
 
 /* IMAGE */
@@ -56,7 +53,7 @@
 .shop-card p {
   margin: 5px 0;
   font-size: 14px;
-  color: #ccc;
+  color: #777;
 }
 
 /* BUTTON */
@@ -64,16 +61,17 @@
   margin-top: 12px;
   padding: 10px 14px;
   border: none;
-  border-radius: 6px;
-  background: linear-gradient(135deg, #eab308, #facc15);
+  border-radius: 8px;
+  background: #ff7a3d;
+  color: #fff;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
   transition: 0.2s;
 }
 
 .shop-btn:hover {
+  background: #ff5c1a;
   transform: scale(1.05);
-  color: #000;
 }
 
 /* ===== CART TABLE ===== */
@@ -85,23 +83,22 @@
 .cart-table table {
   width: 100%;
   border-collapse: collapse;
-  background: #0a0a0a;
+  background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .cart-table th {
-  background: #020617;
-  color: #facc15;
+  background: #fff5ef;
+  color: #ff7a3d;
   padding: 14px;
   text-align: left;
-  font-size: 15px;
 }
 
 .cart-table td {
   padding: 12px;
-  border-bottom: 1px solid #222;
-  vertical-align: middle;
+  border-bottom: 1px solid #eee;
 }
 
 /* IMAGE IN TABLE */
@@ -111,7 +108,7 @@
 
 /* ROW HOVER */
 .cart-table tr:hover {
-  background: rgba(234, 179, 8, 0.05);
+  background: #fff5ef;
 }
 
 /* ===== TOTAL SECTION ===== */
@@ -128,9 +125,8 @@
   border: none;
   padding: 6px 12px;
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .remove-btn:hover {
@@ -142,18 +138,17 @@
   margin-top: 12px;
   padding: 12px 18px;
   border: none;
-  border-radius: 6px;
-  background: #198754;
+  border-radius: 8px;
+  background: #ff7a3d;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .place-order-btn:hover {
-  opacity: 0.9;
-  transform: scale(1.03);
+  background: #ff5c1a;
 }
+
 /* ===== SEARCH BAR ===== */
 .search-bar {
   display: block;
@@ -162,49 +157,42 @@
   width: 100%;
   max-width: 400px;
 
-  background: #0a0a0a;
-  border: 1px solid rgba(234, 179, 8, 0.3);
+  background: #ffffff;
+  border: 1px solid #ddd;
   border-radius: 10px;
 
-  color: #e5e5e5;
+  color: #333;
   font-size: 15px;
 
   outline: none;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-/* placeholder */
 .search-bar::placeholder {
-  color: #888;
+  color: #999;
 }
 
-/* focus effect */
 .search-bar:focus {
-  border-color: #facc15;
-  box-shadow: 0 0 10px rgba(234, 179, 8, 0.4);
-}
-
-/* hover */
-.search-bar:hover {
-  border-color: rgba(234, 179, 8, 0.6);
+  border-color: #ff7a3d;
+  box-shadow: 0 0 6px rgba(255, 122, 61, 0.3);
 }
 
 /* ===== ORDER FORM ===== */
 .order-form {
   margin-top: 20px;
-  background: #0a0a0a;
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid rgba(234, 179, 8, 0.2);
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .order-form h3 {
   text-align: center;
   margin-bottom: 15px;
-  color: #facc15;
+  color: #ff7a3d;
 }
 
 .order-form input,
@@ -213,9 +201,9 @@
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 6px;
-  border: none;
-  background: #020617;
-  color: #fff;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
   outline: none;
 }
 
@@ -224,10 +212,16 @@
   height: 80px;
 }
 
+.order-form input:focus,
+.order-form textarea:focus {
+  border-color: #ff7a3d;
+  box-shadow: 0 0 5px rgba(255, 122, 61, 0.3);
+}
+
 .order-form button {
   width: 100%;
   padding: 10px;
-  background: #198754;
+  background: #ff7a3d;
   border: none;
   border-radius: 6px;
   color: white;
@@ -236,5 +230,6 @@
 }
 
 .order-form button:hover {
-  opacity: 0.9;
+  background: #ff5c1a;
 }
+

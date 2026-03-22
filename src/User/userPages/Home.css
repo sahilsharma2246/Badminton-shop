@@ -1,4 +1,4 @@
-/* ===== GLOBAL RESET (FIX BLANK SPACE) ===== */
+/* ===== GLOBAL RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +6,14 @@
 }
 
 body {
-  background: #020617;
+  background: #f8f5f2;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ===== MAIN CONTAINER ===== */
 .home {
-  font-family: "Segoe UI", sans-serif;
-  background: #020617;
-  color: #e5e5e5;
+  background: #f8f5f2;
+  color: #333;
   min-height: 70vh;
   width: 100%;
   overflow-x: hidden;
@@ -27,36 +27,37 @@ section {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(135deg, #020617, #0a0a0a);
+  background: linear-gradient(135deg, #ffffff, #fff5ef);
   text-align: center;
+  border-radius: 12px;
+  margin: 15px;
+  padding: 60px 20px;
 }
 
 .hero h1 {
   font-size: 38px;
-  background: linear-gradient(90deg, #eab308, #facc15);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff7a3d;
 }
 
 .hero p {
   margin-top: 10px;
-  color: #a3a3a3;
+  color: #777;
 }
 
 .hero button {
   margin-top: 20px;
   padding: 10px 22px;
   border: none;
-  background: linear-gradient(135deg, #eab308, #facc15);
-  color: #000;
-  border-radius: 6px;
+  background: #ff7a3d;
+  color: #fff;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .hero button:hover {
-  box-shadow: 0 0 12px rgba(234, 179, 8, 0.6);
-  color: white;
+  background: #ff5c1a;
+  box-shadow: 0 5px 15px rgba(255, 122, 61, 0.4);
 }
 
 /* ===== STRINGING ===== */
@@ -64,12 +65,12 @@ section {
   display: flex;
   gap: 30px;
   align-items: center;
-  background: #0a0a0a;
+  background: #ffffff;
   padding: 25px;
   border-radius: 12px;
   max-width: 1200px;
   margin: auto;
-  border: 1px solid rgba(234, 179, 8, 0.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .stringing img {
@@ -78,26 +79,25 @@ section {
 }
 
 .stringing h2 {
-  color: #eab308;
+  color: #ff7a3d;
 }
 
 .stringing p {
-  color: #a3a3a3;
+  color: #777;
   margin: 10px 0;
 }
 
 .stringing button {
   padding: 8px 18px;
-  background: linear-gradient(135deg, #eab308, #facc15);
+  background: #ff7a3d;
   border: none;
   border-radius: 6px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 
 .stringing button:hover {
-  box-shadow: 0 0 10px rgba(234, 179, 8, 0.6);
-  color: white;
+  background: #ff5c1a;
 }
 
 /* ===== CATEGORIES ===== */
@@ -106,7 +106,7 @@ section {
 }
 
 .categories h2 {
-  color: #eab308;
+  color: #ff7a3d;
 }
 
 .category-grid {
@@ -120,18 +120,17 @@ section {
 }
 
 .card {
-  background: #0a0a0a;
+  background: #ffffff;
   padding: 25px;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
-  border: 1px solid transparent;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .card:hover {
-  border: 1px solid #eab308;
   transform: translateY(-5px);
-  color: #eab308;
+  color: #ff7a3d;
 }
 
 /* ===== PRODUCTS ===== */
@@ -140,7 +139,7 @@ section {
 }
 
 .featured h2 {
-  color: #eab308;
+  color: #ff7a3d;
 }
 
 .products {
@@ -152,16 +151,15 @@ section {
 }
 
 .product-card {
-  background: #0a0a0a;
+  background: #ffffff;
   padding: 20px;
   border-radius: 12px;
   width: 220px;
   transition: 0.3s;
-  border: 1px solid transparent;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .product-card:hover {
-  border: 1px solid #eab308;
   transform: translateY(-5px);
 }
 
@@ -175,23 +173,22 @@ section {
 }
 
 .product-card p {
-  color: #a3a3a3;
+  color: #777;
 }
 
 .product-card button {
   margin-top: 10px;
   width: 100%;
   padding: 8px;
-  background: linear-gradient(135deg, #eab308, #facc15);
+  background: #ff7a3d;
   border: none;
   border-radius: 6px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 
 .product-card button:hover {
-  box-shadow: 0 0 10px rgba(234, 179, 8, 0.6);
-  color: white;
+  background: #ff5c1a;
 }
 
 /* ===== CTA ===== */
@@ -200,34 +197,31 @@ section {
   max-width: 1200px;
   padding: 40px;
   text-align: center;
-  background: linear-gradient(135deg, #0a0a0a, #020617);
+  background: linear-gradient(135deg, #ffffff, #fff5ef);
   border-radius: 12px;
-  border: 1px solid rgba(234, 179, 8, 0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .cta h2 {
-  color: #eab308;
+  color: #ff7a3d;
 }
 
 .cta button {
   margin-top: 15px;
   padding: 10px 20px;
-  background: linear-gradient(135deg, #eab308, #facc15);
+  background: #ff7a3d;
   border: none;
   border-radius: 6px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 
 .cta button:hover {
-  box-shadow: 0 0 12px rgba(234, 179, 8, 0.6);
-  color: white;
+  background: #ff5c1a;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  
-
   .stringing-container {
     flex-direction: column;
   }

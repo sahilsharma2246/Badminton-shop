@@ -1,13 +1,15 @@
 /* ===== FOOTER ===== */
 .footer {
-  background: #0a0a0a;
-  color: #d4d4d4;
+  background: #ffffff;
+  color: #555;
   text-align: center;
   padding: 25px;
-  margin-top: 50px;
 
-  /* subtle gold border */
-  border-top: 1px solid rgba(234, 179, 8, 0.2);
+  margin: 20px 15px; /* same spacing as header */
+  border-radius: 12px;
+
+  /* subtle shadow like header */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 /* ===== FOOTER LINKS ===== */
@@ -15,23 +17,57 @@
   margin: 12px 0;
 }
 
+/* LINKS */
 .footer-links a {
   margin: 0 12px;
-
-  /* 🔥 GOLD TEXT */
-  color: #eab308;
+  color: #ff7a3d;
   text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* underline hover (same as header) */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ff7a3d;
+  left: 0;
+  bottom: -4px;
   transition: 0.3s;
 }
 
-/* 🔥 HOVER EFFECT */
-.footer-links a:hover {
-  color: #facc15;
-  text-shadow: 0 0 8px rgba(234, 179, 8, 0.6);
+.footer-links a:hover::after {
+  width: 100%;
 }
 
-/* OPTIONAL SMALL TEXT */
+.footer-links a:hover {
+  color: #ff5c1a;
+}
+
+/* TEXT */
 .footer p {
-  color: #a3a3a3;
+  color: #777;
   font-size: 14px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    margin: 0;
+    font-size: 13px;
+  }
 }

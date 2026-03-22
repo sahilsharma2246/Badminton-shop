@@ -1,9 +1,9 @@
 /* ===== PAGE ===== */
 .orders-container {
   padding: 30px;
-  background: #020617;
+  background: #f8f5f2;
   min-height: 100vh;
-  color: #e5e5e5;
+  color: #333;
 }
 
 /* TITLE */
@@ -12,31 +12,32 @@
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: bold;
-  color: #facc15;
+  color: #ff7a3d;
 }
 
 /* ===== ORDER CARD ===== */
 .order-card {
-  background: #0a0a0a;
-  border: 1px solid rgba(234, 179, 8, 0.2);
+  background: #ffffff;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 /* USER INFO */
 .order-user h3 {
-  color: #facc15;
+  color: #ff7a3d;
 }
 
 .order-user p {
   margin: 4px 0;
-  color: #ccc;
+  color: #666;
 }
 
 /* ITEMS */
 .order-items {
-  border-top: 1px solid #222;
+  border-top: 1px solid #eee;
   margin-top: 10px;
   padding-top: 10px;
 }
@@ -57,20 +58,22 @@
 
 /* FOOTER */
 .order-footer {
-  border-top: 1px solid #222;
+  border-top: 1px solid #eee;
   margin-top: 10px;
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .order-footer h4 {
-  color: #22c55e;
+  color: #198754; /* green total */
 }
 
 .order-footer p {
   font-size: 13px;
-  color: #aaa;
+  color: #777;
 }
 
 /* DELETE BUTTON */
@@ -89,4 +92,34 @@
 
 .delete-order-btn:hover {
   opacity: 0.85;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .orders-container {
+    padding: 20px;
+  }
+
+  .orders-title {
+    font-size: 24px;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .order-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

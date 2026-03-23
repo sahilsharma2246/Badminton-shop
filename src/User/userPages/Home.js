@@ -70,7 +70,7 @@ const Home = () => {
           <div className="product-card">
             <img src="https://totalsportsaustralia.com.au/wp-content/uploads/2023/03/29-2-Copy-1024x1024.jpg" alt="Racquet" />
             <h3>Yonex Racquet</h3>
-            <p>₹1999</p>
+            <h4>₹1999</h4>
             <button onClick={() => navigate("/Racquet")}>
               Explore
             </button>
@@ -79,7 +79,7 @@ const Home = () => {
           <div className="product-card">
             <img src="https://yonexshop.tw/photo/BGSTG/BG65TW/zz-BG65TW_004-1.jpg?1650871926" alt="String" />
             <h3>BG65 String</h3>
-            <p>₹499</p>
+            <h4>₹499</h4>
             <button onClick={() => navigate("/Strings")}>
               Explore
             </button>
@@ -88,7 +88,7 @@ const Home = () => {
           <div className="product-card">
             <img src="https://altonsports.co.uk/cdn/shop/files/81anzvz2afl._ac_sl1500__1.jpg?v=1750431430" alt="Shuttle" />
             <h3>Nylon Shuttle</h3>
-            <p>₹799</p>
+            <h4>₹799</h4>
             <button onClick={() => navigate("/Shuttle")}>
               Explore
             </button>

@@ -172,9 +172,6 @@ section {
   margin-top: 10px;
 }
 
-.product-card p {
-  color: #777;
-}
 
 .product-card button {
   margin-top: 10px;
@@ -189,6 +186,7 @@ section {
 
 .product-card button:hover {
   background: #ff5c1a;
+  color: goldenrod;
 }
 
 /* ===== CTA ===== */

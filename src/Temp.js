@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import firedb from "./firebase";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function Temp() {
       firedb.child("Owner").child(key).update({ status: 0 })
         .then(() => {
           localStorage.removeItem("userKey");
-          navigate("/"); // ✅ go to user home route
+          navigate("/");
         })
         .catch((err) => {
           console.log(err);

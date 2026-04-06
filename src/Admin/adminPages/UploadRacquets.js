@@ -90,7 +90,7 @@ function UploadRacquets() {
 
       {/* Form */}
       <div className="upload-box">
-        <h2>Upload Racquet</h2>
+        <h2>Upload-Racquet</h2>
 
         <input
           name="name"

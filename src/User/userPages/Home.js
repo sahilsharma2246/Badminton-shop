@@ -68,7 +68,7 @@ const Home = () => {
         <div className="products">
 
           <div className="product-card">
-            <img src="https://totalsportsaustralia.com.au/wp-content/uploads/2023/03/29-2-Copy-1024x1024.jpg" alt="Racquet" />
+            <img src="https://i.pinimg.com/736x/9d/92/07/9d92075f1f5ed449b7368ad552455653.jpg" alt="Racquet" />
             <h3>Yonex Racquet</h3>
             <h4>₹1999</h4>
             <button onClick={() => navigate("/Racquet")}>

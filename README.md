@@ -1,6 +1,5 @@
 <div align="center">
 
-  <img src="https://i.pinimg.com/1200x/8d/7a/d3/8d7ad3c5c80ab4b6df7b2af62ab7a0f4.jpg" alt="Badminton Shop Banner" width="100%" style="border-radius: 10px;" />
 
   # 🏸 Badminton Shop
 

@@ -1,29 +1,38 @@
-# 🏸 Badminton Shop Website
+# 🏸 Badminton Shop
 
-A modern Badminton E-commerce Website built using React + Firebase, featuring an Admin Panel to manage products and a User Interface to explore items like racquets, shuttles, strings, and accessories.
+A modern, responsive e-commerce platform dedicated to badminton equipment, built using **React.js** and **Firebase** with real-time database integration and continuous cloud deployment.
 
-# 🚀 Features
+🌐 **Live Demo:** [aesthetic-hummingbird-73edd6.netlify.app](https://aesthetic-hummingbird-73edd6.netlify.app/)  
+📁 **Source Code:** [github.com/sahilsharma2246/Badminton-shop](https://github.com/sahilsharma2246/Badminton-shop)
 
+---
 
-# 👤 User Side
+## ✨ Features
 
-•🏸 Browse Racquets, Shuttles, Strings, Accessories
-•🔍 Explore product details
-•🛒 Cart system (optional)
-•📱 Fully responsive design
-•🎨 Premium Gold + Dark theme
+- **Product Catalog & Details:** Browse badminton gear with dynamic filtering and seamless responsive layout across mobile and desktop devices.
+- **Firebase Authentication:** Secure login and guest checkout workflows powered by Firebase Auth.
+- **Real-Time Data Sync:** Instant updates to inventory stock, cart items, and product updates via Firebase Firestore.
+- **Dynamic Cart Management:** Interactive cart with real-time price calculations and quantity adjustments.
+- **Cloud Deployment:** Hosted and continuously deployed on Netlify for fast global edge performance.
 
-# 🔐 Admin Panel
+---
 
-•🔑 Secure Login (Firebase)
-•➕ Add products (Racquet, Shuttle, Strings, Accessories)
-•📦 Data stored in Firebase Realtime Database
-•🎯 Simple and clean UI
+## 🛠️ Tech Stack
 
-# 🛠️ Tech Stack
+- **Frontend:** React.js, JavaScript (ES6+), HTML5, CSS3, Bootstrap
+- **Backend & Database:** Firebase Authentication, Cloud Firestore
+- **Deployment:** Netlify
 
-•⚛️ React.js
-•🔥 Firebase Realtime Database
-•🎨 CSS (Custom Gold Theme)
-•🌐 React Router
+---
 
+## 🚀 Local Setup & Installation
+
+### Prerequisites
+Make sure you have **Node.js** (v16.x or later) and **npm** installed on your system.
+
+### Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/sahilsharma2246/Badminton-shop.git](https://github.com/sahilsharma2246/Badminton-shop.git)
+   cd Badminton-shop
